@@ -1,0 +1,70 @@
+// Place all the styles related to the students controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	background-image: url('HogwartsCastle.jpg' );
+	background-size: 100%;
+
+}
+
+.container {
+	text-align: center;
+}
+
+h1 {
+	color: gold;
+	font-family: times;
+	font-size: 40px;
+}
+
+h2 {
+	color: white;
+}
+
+h4 {
+	text-color: black;
+}
+
+a {
+	text-color: black;
+}
+
+.panel-title {
+	text-align: center;
+	font-style: bold;
+}
+
+.houses {
+	text-align: center;
+	font-style: bold;
+}
+
+.Gryffindor-heading {
+	background-color: lighten(red, 20%)
+}
+
+.Hufflepuff-heading {
+	background-color: lighten(purple, 20%);
+}
+
+.Ravenclaw-heading {
+	background-color: lighten(orange, 20%);
+}
+
+.Slytherin-heading {
+	background-color: lighten(red, 20%);
+}
+
+.carousel-inner {
+	width: 560px; height: 300px;
+	text-align:center;
+}
+
+#myCarousel {
+	width:560px; margin: 0;
+}
+
+.crest {
+	width:100%; height:100%;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HogwartsRails</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+ 
+<body class="container">
+
+<%= yield %>
+<!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  View Sample Students
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel"><em>Modal</em> Students</h4>
+     
+      </div>
+      <div class="modal-body">
+      	<div id="myCarousel" class="carousel slide carousel-fit" data-ride="carousel" >
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://www.independent.co.uk/incoming/article8812781.ece/alternates/w620/potter.jpg" alt="Harry Potter"  />
+      <div class="carousel-caption">
+      	<p>
+      		<p>
+      			<p>
+        <h3>Harry Potter</h3>
+
+        <p>Harry Potter should be scared for his life and figuring out how to fight Voldemort. Instead, he's playing quiddich.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://www.internationalhero.co.uk/w/weasleyron1.jpg" alt="Ron Weasley" />
+      <div class="carousel-caption">
+        <h3>R-Block Weasely</h3>
+        <p>R-Block used to be called Ron until he took Hermione away from Harry. Harry then went for Ron's sister.</p>
+      </div>
+    </div>
+    <div class="item">
+       <img src="http://images4.fanpop.com/image/photos/24200000/Hermione-J-Granger-the-girls-of-harry-potter-24210767-822-1024.jpg" alt="Hermione" height="300px"/>
+      <div class="carousel-caption">
+        <h3>Hermione Grainger</h3>
+        <p> Her parents are muggles.</p>
+        <p>
+        
+        	<p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="myCarousel" class="carousel slide carousel-fit" data-ride="carousel">
+  
+</div>
+
+
+</body>
+</html>
